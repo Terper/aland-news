@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Åland News API</title>
+  </head>
+  <body>
+    <h1>Åland News API</h1>
+    <h2>Endpoints</h2>
+    <table>
+      <tr>
+        <th>Path</th>
+        <th>Provider</th>
+      </tr>
+      <tr>
+        <td><a href="./api">/api</a></td>
+        <td>All providers</td>
+      </tr>
+      <tr>
+        <td><a href="./api/alandstidningen">/api/alandstidningen</a></td>
+        <td><a href="https://www.alandstidningen.ax/">Ålandstidningen</a></td>
+      </tr>
+      <tr>
+        <td><a href="./api/alandsradio">/api/alandsradio</a></td>
+        <td><a href="https://alandsradio.ax">Ålands Radio & Tv</a></td>
+      </tr>
+      <tr>
+        <td><a href="./api/nyaaland">/api/nyaaland</a></td>
+        <td><a href="https://www.nyaaland.ax/">Nya Åland</a></td>
+      </tr>
+    </table>
+    <h2>Format</h2>
+    <pre>
+items: [
+    title: string
+    link: string
+    description: string
+    pubDate: string
+    creator: string
+    guid: {
+        _: string
+        $: {
+          isPermaLink: string
+        }
+    }
+    encoded: string
+    category: string[]
+    enclosure: {
+        $: {
+          url: string
+          lenght: string
+          type: string
+        }
+    }
+]
+      </pre
+    >
+  </body>
+</html>
